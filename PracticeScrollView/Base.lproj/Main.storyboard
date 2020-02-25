@@ -12,32 +12,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PracticeScrollView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="829" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="828" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-x1-8PV">
-                                <rect key="frame" x="349" y="44" width="131" height="32"/>
+                                <rect key="frame" x="348.5" y="44" width="131" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psu-el-ONz">
-                                <rect key="frame" x="0.0" y="112" width="829" height="750"/>
+                                <rect key="frame" x="0.0" y="112" width="828" height="750"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-1e-Pwa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="750"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="414" id="WYa-aA-5Dk"/>
+                                            <constraint firstAttribute="width" constant="382" id="WYa-aA-5Dk"/>
                                         </constraints>
                                         <connections>
                                             <segue destination="eBT-x3-kbR" kind="embed" id="HlP-bd-9LF"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-B3-VU9">
-                                        <rect key="frame" x="413" y="0.0" width="415" height="750"/>
+                                        <rect key="frame" x="430" y="0.0" width="382" height="750"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="415" id="k0X-T8-rNj"/>
+                                            <constraint firstAttribute="width" constant="382" id="k0X-T8-rNj"/>
                                         </constraints>
                                         <connections>
                                             <segue destination="iFi-NH-nNI" kind="embed" id="9gk-bN-9Xd"/>
@@ -50,11 +50,11 @@
                                     <constraint firstAttribute="bottom" secondItem="jOA-1e-Pwa" secondAttribute="bottom" id="A4j-Jb-iyR"/>
                                     <constraint firstAttribute="bottom" secondItem="1I2-B3-VU9" secondAttribute="bottom" id="F8Y-tO-bfp"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="height" secondItem="Psu-el-ONz" secondAttribute="height" id="GkZ-Hv-5L4"/>
-                                    <constraint firstAttribute="trailing" secondItem="1I2-B3-VU9" secondAttribute="trailing" id="XvV-I3-NvD"/>
-                                    <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" constant="413" id="b2L-Nm-vEO"/>
+                                    <constraint firstAttribute="trailing" secondItem="1I2-B3-VU9" secondAttribute="trailing" constant="16" id="XvV-I3-NvD"/>
+                                    <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" constant="430" id="b2L-Nm-vEO"/>
                                     <constraint firstItem="1I2-B3-VU9" firstAttribute="top" secondItem="Psu-el-ONz" secondAttribute="top" id="hpL-fD-SiP"/>
-                                    <constraint firstItem="jOA-1e-Pwa" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" id="mPD-OH-jbX"/>
-                                    <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="KoP-WS-vfJ" secondAttribute="leading" constant="413" id="phQ-ER-vRd"/>
+                                    <constraint firstItem="jOA-1e-Pwa" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" constant="16" id="mPD-OH-jbX"/>
+                                    <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="KoP-WS-vfJ" secondAttribute="leading" constant="430" id="phQ-ER-vRd"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="width" secondItem="Psu-el-ONz" secondAttribute="width" multiplier="0.5" priority="250" id="tnc-VP-Njs"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="top" secondItem="Psu-el-ONz" secondAttribute="top" id="ubC-jX-phi"/>
                                 </constraints>
@@ -73,7 +73,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <size key="freeformSize" width="829" height="896"/>
+                    <size key="freeformSize" width="828" height="896"/>
                     <connections>
                         <outlet property="scrollView" destination="Psu-el-ONz" id="agI-3E-yfY"/>
                     </connections>
@@ -87,11 +87,11 @@
             <objects>
                 <viewController id="eBT-x3-kbR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DHG-Pg-fYe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-5W-sLe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="750"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -117,11 +117,11 @@
             <objects>
                 <viewController id="iFi-NH-nNI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dHo-Cn-G4d">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-cq-UC1">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="750"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
