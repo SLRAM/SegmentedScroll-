@@ -11,27 +11,32 @@ import UIKit
 class ViewController: UIViewController {
 	@IBOutlet private var segmentedControl: UISegmentedControl!
 	@IBOutlet private var scrollView: UIScrollView!
-	@IBOutlet weak var socialContainerView: UIView!
-	@IBOutlet weak var transactionContainerView: UIView!
 
 	let numberOfPages :Int = 2
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.scrollView.isPagingEnabled = true
 		self.scrollView.delegate = self
-//		self.scrollView.contentSize = CGSize(width: (self.socialContainerView.frame.width * 2) + 67, height: socialContainerView.frame.size.height + 20)
-//		self.scrollView.isPagingEnabled = true
-//		print(self.scrollView.contentSize.width)
-
 		}
 
+	@IBAction func segmentedControlTapped(_ sender: UISegmentedControl) {
+		print(sender.selectedSegmentIndex)
+		switch sender.selectedSegmentIndex {
+		case 0:
+			self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+		case 1:
+			self.scrollView.setContentOffset(CGPoint(x: 414.0, y: 0.0), animated: true)
+		default:
+			print("error")
+		}
+	}
 }
 
 extension ViewController: UIScrollViewDelegate {
-//	func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//	}
 	func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-		print(scrollView.contentOffset.x)
+		print(scrollView.contentOffset)
+		let indexOfPage = scrollView.contentOffset.x / scrollView.frame.size.width
+		print(indexOfPage)
+		self.segmentedControl.selectedSegmentIndex = Int(indexOfPage)
 	}
 }

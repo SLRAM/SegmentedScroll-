@@ -21,6 +21,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="glF-Y5-p8p"/>
+                                </connections>
                             </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psu-el-ONz">
                                 <rect key="frame" x="0.0" y="112" width="828" height="750"/>
@@ -54,7 +57,6 @@
                                     <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" constant="430" id="b2L-Nm-vEO"/>
                                     <constraint firstItem="1I2-B3-VU9" firstAttribute="top" secondItem="Psu-el-ONz" secondAttribute="top" id="hpL-fD-SiP"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="leading" secondItem="Psu-el-ONz" secondAttribute="leading" constant="16" id="mPD-OH-jbX"/>
-                                    <constraint firstItem="1I2-B3-VU9" firstAttribute="leading" secondItem="KoP-WS-vfJ" secondAttribute="leading" constant="430" id="phQ-ER-vRd"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="width" secondItem="Psu-el-ONz" secondAttribute="width" multiplier="0.5" priority="250" id="tnc-VP-Njs"/>
                                     <constraint firstItem="jOA-1e-Pwa" firstAttribute="top" secondItem="Psu-el-ONz" secondAttribute="top" id="ubC-jX-phi"/>
                                 </constraints>
@@ -76,6 +78,7 @@
                     <size key="freeformSize" width="828" height="896"/>
                     <connections>
                         <outlet property="scrollView" destination="Psu-el-ONz" id="agI-3E-yfY"/>
+                        <outlet property="segmentedControl" destination="Vf9-x1-8PV" id="xlB-rd-YdH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
